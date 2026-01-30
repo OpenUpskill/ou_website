@@ -1,206 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OpenUpskill - Empowering Students</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #fdfcfb;
-      color: #2e2e2e;
-    }
-    .highlight-link {
-	  background-color: #ffebcc;
-	  padding: 1rem;
-	  margin-top: 1.5rem;
-	  border-left: 5px solid #e67e22;
-	  border-radius: 8px;
-	  font-weight: 600;
-	  font-size: 1.15rem;
-	}
-	.highlight-link a {
-	  color: #c0392b;
-	  text-decoration: underline;
-	}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>OpenUpskill – Educational Institute Operating Platform & AI Education</title>
 
-    header {
-      background: linear-gradient(120deg, #8e44ad, #d6336c);
-      color: white;
-      padding: 3rem 2rem;
-    }
-    header img {
-      width: 140px;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-    .header-content {
-      text-align: center;
-    }
-    .header-content h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2.8rem;
-      margin: 0;
-    }
-    .header-content p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      font-weight: 400;
-    }
-    section {
-      padding: 2.5rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-      text-align: left;
-    }
-    section:nth-child(odd) {
-      background-color: #fef6e4;
-    }
-    section:nth-child(even) {
-      background-color: #f3f0ff;
-    }
-    h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #5a189a;
-    }
-    h3 {
-      color: #9b2226;
-      margin-top: 1.5rem;
-    }
-    p, li {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    ul li {
-      margin-bottom: 0.6rem;
-    }
-    .contact {
-      background: #fae1dd;
-      padding: 2rem;
-    }
-    .contact a {
-      color: #6d3e3e;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    footer {
-      background-color: #2f2f2f;
-      color: #ccc;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.95rem;
-    }
-  </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#f9fafc;color:#2e2e2e;line-height:1.6}
+
+header{
+  background:linear-gradient(120deg,#5a189a,#d6336c);
+  color:#fff;
+  padding:3rem 1.5rem;
+  text-align:center;
+}
+header img{height:80px;margin:10px}
+header h1{font-family:'Poppins';font-size:3rem;margin-top:1rem}
+header p{font-size:1.2rem;margin-top:.5rem}
+
+.section{
+  padding:3rem 1.5rem;
+  max-width:1100px;
+  margin:auto;
+}
+.section h2{
+  font-family:'Poppins';
+  color:#5a189a;
+  margin-bottom:1rem;
+  font-size:2.2rem;
+}
+.section p{margin-bottom:1rem;font-size:1.1rem}
+
+.alt{background:#f3f0ff}
+.light{background:#fff7e6}
+
+ul{padding-left:1.5rem;margin-top:1rem}
+li{margin-bottom:.6rem;font-size:1.05rem}
+
+.highlight{
+  background:#ffe5d9;
+  border-left:6px solid #e76f51;
+  padding:1rem;
+  border-radius:8px;
+  margin-top:1rem;
+  font-weight:600;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+}
+
+.card{
+  background:white;
+  padding:1.5rem;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3{color:#9b2226;margin-bottom:.8rem}
+
+.cta{
+  text-align:center;
+  padding:3rem 1rem;
+  background:linear-gradient(120deg,#8e44ad,#6a4c93);
+  color:white;
+}
+
+footer{
+  background:#2f2f2f;
+  color:#ccc;
+  text-align:center;
+  padding:1.5rem;
+}
+a{color:#5a189a;font-weight:600;text-decoration:none}
+</style>
 </head>
+
 <body>
 
-  <header>
-  <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <img src="Logo_OpenUpskill.png" alt="OpenUpskill Logo" />
-    <img src="Digital_India_logo.png" alt="Digital India Logo" style="height: 80px;" />
+<header>
+  <div>
+    <img src="Logo_OpenUpskill.png" alt="OpenUpskill Logo"/>
+    <img src="Digital_India_logo.png" alt="Digital India Logo"/>
   </div>
-  <div class="header-content">
-    <h1>OpenUpskill</h1>
-    <p>Empowering Students Through Open Source, Product Excellence & Entrepreneurship</p>
-  </div>
+  <h1>OpenUpskill</h1>
+  <p>End-to-End Education Technology Partner for Educational Institutes – From Digitization to AI</p>
 </header>
 
-  <section>
-    <h2>Who We Are</h2>
-    <p>
-      OpenUpskill is a next-generation learning and innovation platform building skilled Indian developers and technologists mentored by global experts.
-      We enable students to contribute to open-source and build real-world products—bridging the gap between theory and practice.
-    </p>
-  </section>
+<!-- VISION MISSION -->
+<section class="section light">
+<h2>🌟 Our Vision</h2>
+<p>
+To transform Educational Institutes into intelligent, self-reliant learning ecosystems powered by digital operations, real-world skills, and in-house AI capability.
+</p>
 
-  <section>
-    <h2>Vision</h2>
-    <p>
-      To shape the future of employment by empowering Indian students to build products, foster innovation, and gain practical skills through open-source engagement.
-    </p>
-  </section>
+<h2 style="margin-top:2rem;">🎯 Our Mission</h2>
+<p>
+To digitize educational institute operations, bring transparency to academics and administration, upskill students through practical learning, and equip institutions with easy-to-use AI infrastructure.
+</p>
 
-  <section>
-    <h2>Mission</h2>
-    <ul>
-      <li>Empower engineering students through real-world projects and open-source work</li>
-      <li>Foster a global community-driven learning environment</li>
-      <li>Deliver impactful software, hardware, and digital solutions</li>
-      <li>Incubate student-led startups to reduce unemployment</li>
-    </ul>
-  </section>
+<p class="highlight" style="margin-top:2rem;text-align:center;">
+<strong>USE — Useful. Simple. Effective.</strong>
+</p>
+</section>
 
-  <section>
-    <h2>Core Focus Areas</h2>
+<!-- WHO WE ARE -->
+<section class="section">
+<h2>Who We Are</h2>
+<p>
+OpenUpskill is building India’s first <strong>Educational Institute Operating Platform</strong> that not only digitizes institute operations,
+but also enables institutes to upskill students and adopt AI education with almost zero overhead.
+</p>
+<p>
+We combine <strong>Management, Academic Control, Communication, Accounting, Mobile Apps,
+Upskilling Programs, and AI Labs</strong> into one powerful ecosystem.
+</p>
+</section>
 
-    <h3>🔧 Open-Source Contribution</h3>
-    <ul>
-      <li>GitHub-based contributions, PR training, triaging issues</li>
-      <li>Structured mentorship and gamified progress tracking</li>
-    </ul>
+<!-- OPERATING PLATFORM -->
+<section class="section alt">
+<h2>🏫 Educational Institute Operating Platform (Not Just ERP)</h2>
+<p>We digitize how an educational institute actually functions every day.</p>
 
-    <h3>🧠 Product Development & Innovation</h3>
-    <ul>
-      <li>Startup-style product-building simulations</li>
-      <li>MVP design, Agile methods, real feedback loops</li>
-    </ul>
+<div class="grid">
+<div class="card">
+<h3>📘 Live Syllabus Tracking</h3>
+<p>Topic-wise progress, visible to students and academic heads in percentage.</p>
+</div>
 
-    <h3>📚 Upskilling Programs</h3>
-    <ul>
-      <li>Hands-on projects in software & hardware</li>
-      <li>Masterclasses: Linux, Kubernetes, CI/CD, Git & more</li>
-    </ul>
-  </section>
+<div class="card">
+<h3>💬 Academic Diary</h3>
+<p>WhatsApp-like official communication between teacher, parent, and students with history.</p>
+</div>
 
-  <section>
-    <h2>Our Initiatives</h2>
-    <ul>
-      <li><strong>Product Labs:</strong> Sandbox for rapid prototyping</li>
-      <li><strong>OSS Evangelism:</strong> Events & workshops to spread awareness</li>
-      <li><strong>Talent Network:</strong> Connect top contributors with hiring startups</li>
-      <li><strong>Mentor Guidance:</strong> Global experts guiding student innovators</li>
-    </ul>
-  </section>
+<div class="card">
+<h3>📝 Digital Assignments</h3>
+<p>Teacher assigns → Student uploads → Teacher evaluates → Marks recorded.</p>
+</div>
 
-  <section>
-    <h2>We Work With</h2>
-    <ul>
-      <li>🎓 Students & Fresh Graduates</li>
-      <li>🏫 Colleges & Universities</li>
-      <li>🧑‍🏫 Mentors & Experts</li>
-      <li>🤝 NGOs, Hiring Managers, and OSS Communities</li>
-  </ul>
-  <p class="highlight-link">
-    📝 <strong>Interested to Partner:</strong>
-    <a href="https://docs.google.com/forms/d/11_6JbpbjYeaSeWNBThVPXONiqRS_fxgZZEqc1W0kIVs/edit?ts=67d7d3ed" target="_blank">
-      Fill out our interest form
-    </a>
-  </p>
-  </section>
+<div class="card">
+<h3>📊 Academic Head Dashboard</h3>
+<p>Full visibility of academics, teachers, finance, and student performance.</p>
+</div>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>🌐 <strong>Website:</strong> <a href="http://www.openupskill.com" target="_blank">www.openupskill.com</a></p>
-    <p>📧 <strong>Email:</strong> <a href="mailto:contact@openupskill.com">contact@openupskill.com</a>, <a href="mailto:upskill.open@gmail.com">upskill.open@gmail.com</a></p>
-    <p>🔗 <strong>GitHub:</strong> <a href="https://github.com/OpenUpskill/ou_website" target="_blank">OpenUpskill on GitHub</a></p>
-    <p>📍 <strong>Address:</strong> #16, 9th Cross, 8th Main, Vinayaka Nagar - B Block, Bengaluru 560017, India</p>
-    <p>📱 <strong>Phone:</strong> +91-8088705901</p>
+<div class="card">
+<h3>💰 Integrated Accounting</h3>
+<p>Ledger, journal, accounts – real accounting, not just fee collection.</p>
+</div>
 
-  </section>
+<div class="card">
+<h3>📚 Academic History</h3>
+<p>Student report cards across years instantly available.</p>
+</div>
+</div>
+</section>
 
-  <footer>
-    © 2025 OpenUpskill. All rights reserved.
-  </footer>
+<!-- ROLE BASED APPS -->
+<section class="section light">
+<h2>📱 Dedicated Apps & Web Dashboards for Every Role</h2>
+<ul>
+<li>Teacher App</li>
+<li>Student / Parent App</li>
+<li>Academic Coordinator / Principal Dashboard</li>
+<li>Office Clerk Dashboard</li>
+<li>Accountant Dashboard</li>
+<li>Super Admin Access to all dashboards</li>
+</ul>
+<p class="highlight">All apps and web dashboards are perfectly in sync. Simple. Clean. Easy to use.</p>
+</section>
+
+<!-- INFRA -->
+<section class="section alt">
+<h2>☁️ Reliable Infrastructure – 99.9% Availability</h2>
+<p>
+Powered by modern MicroK8s cloud architecture, our platform ensures high availability,
+security, and scalability for multiple educational institutes.
+</p>
+</section>
+
+<!-- UPSKILLING -->
+<section class="section">
+<h2>🎓 Upskilling & Open Source Learning Programs</h2>
+<p>
+Beyond management software, OpenUpskill trains students in real-world skills:
+</p>
+<ul>
+<li>Open-source contributions and GitHub workflow</li>
+<li>Linux, Kubernetes, DevOps, CI/CD</li>
+<li>Product development mindset</li>
+<li>Mentorship from global experts</li>
+</ul>
+</section>
+
+<!-- AI LAB -->
+<section class="section alt">
+<h2>🤖 AI Lab Platform – “AI in a Box” (Upcoming)</h2>
+<p>
+We are enabling educational institutes to bring <strong>AI capability in-house</strong> just like using a mobile phone.
+No complex setup. No overhead.
+</p>
+<p>
+Students will learn, experiment, and build using AI inside their own institute infrastructure.
+</p>
+</section>
+
+<!-- POSITIONING -->
+<section class="section light">
+<h2>🚀 What Makes OpenUpskill Unique</h2>
+<ul>
+<li>Educational institute digitization + academic control</li>
+<li>Official communication & assignment workflow</li>
+<li>Accounting integrity</li>
+<li>Student academic continuity</li>
+<li>Upskilling programs for students</li>
+<li>AI readiness for institutes</li>
+</ul>
+<p class="highlight">
+OpenUpskill is not a vendor. We are a long-term education technology partner.
+</p>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+<h2>Contact Us</h2>
+<p><strong>Website:</strong> <a href="http://www.openupskill.com">www.openupskill.com</a></p>
+<p><strong>Email:</strong> contact@openupskill.com</p>
+<p><strong>Phone:</strong> +91-8088705901</p>
+<p><strong>Address:</strong> Bengaluru, India</p>
+</section>
+
+<div class="cta">
+<h2>Bring Your Educational Institute from Registers to AI</h2>
+<p>USE – Useful. Simple. Effective.</p>
+</div>
+
+<footer>
+© 2025 OpenUpskill. All rights reserved.
+</footer>
 
 </body>
 </html>
